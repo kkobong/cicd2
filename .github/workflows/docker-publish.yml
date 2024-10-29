@@ -27,10 +27,8 @@ jobs:
   integration:
     uses: kkobong/pythoncicd/.github/workflows/python-app.yml@main
     
-
     permissions:
       contents: read
-      packages: write
   build:
     needs: [integration]
     
